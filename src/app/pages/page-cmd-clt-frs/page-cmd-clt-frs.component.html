@@ -1,0 +1,70 @@
+<div class="col">
+    <div class="row m-3">
+        <div class="col-md-8 p-0">
+            <h1>Commande {{origin}}</h1>
+        </div> 
+        <div class="col-md-4">
+           <app-boutton-action
+           [isImportVisible]="false"
+           (clickEvent)="nouvelleCommande()"
+           ></app-boutton-action>
+        </div>
+    </div>
+    <div class=" col m-3">
+      <div class="card">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            
+              <h2 class="card-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <div class="container">
+                   <app-detail-cmd-clt-frs></app-detail-cmd-clt-frs>
+                    </div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " style="max-height: 250px; overflow-y: scroll ;">
+                <div class="card-body">
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                   <app-detail-cmd></app-detail-cmd>
+                </div>
+               </div>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-md-6 text-left">
+                     <h5>12 articles commandes</h5> 
+                  </div>
+                  <div class="col-md-6 text-end"> 
+                   <h5>Total commande: 123,69 </h5> 
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+          <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12 text-center">
+            <app-pagination></app-pagination>
+        </div>
+    </div>
+</div>
+

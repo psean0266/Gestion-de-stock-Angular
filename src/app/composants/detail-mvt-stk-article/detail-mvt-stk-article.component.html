@@ -1,0 +1,88 @@
+<div class="row mb-1 mr-0 mt-1 custom-border">
+    <div class="col-md-2 custom-border-right p-1 text-center">
+        <!-- <div class="border-right"> -->
+            <img src="assets/product.png" width="100px" height="100px" height="100px">
+        <!-- </div> -->
+    </div>
+
+    <!--  Details article-->
+    <div class="col-md-3 custom-border-right">
+        <div class="col">
+            <div class="row">
+              <div class="col-md-1"><i class="fa-solid fa-circle-info blue-color"></i></div>
+              <div class="col-md-10">Code article</div>
+            </div>
+            <div class="row">
+               <div class="col-md-1"><i class="fa-solid fa-circle-info blue-color"></i></div>
+               <div class="col-md-10">Designation</div>
+            </div>
+            <div class="row">
+               <div class="col-md-1"><i class="fas fa-dollar-sign blue-color"></i></div>
+               <div class="col-md-10">Prix HT</div>
+            </div>
+            <div class="row">
+               <div class="col-md-1"><i class="fas fa-dollar-sign blue-color"></i></div>
+               <div class="col-md-10">Prix TTC</div>
+            </div>
+        </div>
+    </div>
+
+    <!--  details categorie-->
+    <div class="col-md-3 custom-border-right">
+      <div class="row">
+         <div class="col-md-2"><i class="fa-brands fa-dropbox blue-color"></i>
+         </div>
+       <div class="col-md-10">
+         <div class="row">
+            <div class="col-md-32">
+                <h3> Stock actuel </h3> 
+            </div>
+            <div class="col-md-32"> 
+                <h3>139</h3>
+            </div>
+         </div>
+       </div>  
+      </div>
+    </div>
+
+   <!--  boutons action-->
+    <div class="col-md-4 custom-border-right">
+      <div class="row">
+         <div class="col-md-4">
+            <button type="button" class="btn btn-unstyled " data-bs-toggle="modal" data-bs-target="#exampleModal" > 
+            <i class="fab fa-stack-overflow blue-color">
+            </i>&nbsp; Correction de Stock
+            </button>
+         </div>
+      </div>
+    </div>
+</div> 
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Correction de Stock</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Quantite">
+          </div>
+          <div class="mb-3">
+           <select class="form-control">
+            <option> Correction positive</option>
+            <option> Correction negative</option>
+           </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i Class ="fas fa-ban"></i>&nbsp; Annuler</button>
+        <button type="button" class="btn btn-primary"><i Class ="fas fa-save"></i>&nbsp; Save message</button>
+      </div>
+    </div>
+  </div>
+</div>

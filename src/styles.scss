@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+body{
+    background-color: #eff2f5;
+}
+
+.backgroung-grey{
+    background-color: #eff2f5; 
+}
+
+//.backgroung-grey{
+  //  background-color: #eff2f5;
+//}
+.border-none{
+ border: none; 
+}
+
+.min-height-80{
+  min-height: 80px;
+}
+.custom-border-right{
+border-right: solid #141415;
+}
+
+.custom-border{
+  border: 2px solid #141415;
+  border-radius: 5px;
+}
+.blue-color{
+  color: #037bfe;
+}
+

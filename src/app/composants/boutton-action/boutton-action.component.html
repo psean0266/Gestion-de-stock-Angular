@@ -1,0 +1,23 @@
+
+<div class="d-flex">
+
+ <div class="col-md-4" *ngIf="isImportVisible">
+        <button type="button" class="btn btn-warning">
+            <i class="fa-solid fa-cloud-arrow-up"></i>&nbsp;
+            Importer
+        </button>    
+ </div>
+ <div class="col-md-4" *ngIf="isExportVisible">
+     <button type="button" class="btn btn-success">
+        <i class="fa-solid fa-cloud-arrow-down"></i>&nbsp;
+        Exporter
+    </button>    
+ </div>
+ <div class="col-md-4" *ngIf="isNouveauVisible">   
+    <button type="button" class="btn btn-primary" (click)="boutonNouveauClick()">
+        <i class="fa-solid fa-plus "></i>&nbsp;
+        Nouveau
+    </button> 
+ </div>
+</div>
+

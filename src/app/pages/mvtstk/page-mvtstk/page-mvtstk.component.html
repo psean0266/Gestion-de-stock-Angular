@@ -1,0 +1,73 @@
+<div class="col">
+    <div class="row m-3">
+        <div class="col-md-8 p-0">
+            <h1>Mouvement du stock</h1>
+        </div> 
+        <div class="col-md-4">
+           <app-boutton-action
+           [isImportVisible]="false"
+           [isNouveauVisible]="false"
+           ></app-boutton-action>
+        </div>
+    </div>
+    <div class=" col m-3">
+      <div class="card mb-2">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            
+              <h2 class="card-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <!-- <app-detail-mvt-stk-article></app-detail-mvt-stk-article> -->
+                    <!-- <app-detail-mvt-stk-article></app-detail-mvt-stk-article> -->
+                    <div class="container">
+                     <app-detail-mvt-stk-article></app-detail-mvt-stk-article>
+                    </div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " style="max-height: 250px; overflow-y: scroll ;">
+                <div class="card-body">
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+          <div class="card">
+          <div class="accordion" id="accordionPanelsStayOpenExample2">
+            
+              <h2 class="card-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <div class="container">
+                  <app-detail-mvt-stk-article></app-detail-mvt-stk-article>
+                </div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse " style="max-height: 250px; overflow-y: scroll ;">
+                <div class="card-body">
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                 <app-detail-mvt-stk></app-detail-mvt-stk>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12 text-center">
+            <app-pagination></app-pagination>
+        </div>
+    </div>
+</div>
+
