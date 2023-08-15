@@ -35,8 +35,7 @@ import { DetailUtilisateurComponent } from './composants/detail-utilisateur/deta
 import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
 import { ChangerMotDePasseComponent } from './pages/profil/changer-mot-de-passe/changer-mot-de-passe.component';
 import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
-
-
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -84,7 +83,8 @@ import { PageProfilComponent } from './pages/profil/page-profil/page-profil.comp
         FontAwesomeModule,
         NgbAlertModule,
         NgbPaginationModule,
-        NgbAccordionModule,    
+        NgbAccordionModule,
+        FormsModule,    
     ]
 })
 export class AppModule { }
