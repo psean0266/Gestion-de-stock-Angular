@@ -36,6 +36,8 @@ import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisate
 import { ChangerMotDePasseComponent } from './pages/profil/changer-mot-de-passe/changer-mot-de-passe.component';
 import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
 import { FormsModule } from '@angular/forms';
+import { UserService } from './services/user/user.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 
@@ -74,7 +76,7 @@ import { FormsModule } from '@angular/forms';
         PageProfilComponent,
         
     ],
-    providers: [],
+    providers: [UserService, HttpClient],
     bootstrap: [AppComponent, MenuComponent],
     imports: [  
         BrowserModule,
@@ -84,7 +86,8 @@ import { FormsModule } from '@angular/forms';
         NgbAlertModule,
         NgbPaginationModule,
         NgbAccordionModule,
-        FormsModule,    
+        FormsModule, 
+        HttpClientModule 
     ]
 })
 export class AppModule { }
